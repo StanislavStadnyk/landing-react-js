@@ -1,0 +1,66 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Form {
+  padding-top: 36px;
+  position: relative;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__valid,
+  &__error {
+    position: absolute;
+    line-height: 20px;
+    top: 8px;
+    font-size: 16px;
+    color: $color-error;
+    width: 100%;
+
+    @include breakpoint(md) {
+      font-size: 11px;
+    }
+  }
+
+  &__valid {
+    color: $color-valid;
+  }
+
+  .FormControl {
+    flex: auto;
+    margin-right: 20px;
+
+    @include breakpoint(md) {
+      margin-right: 0;
+      height: 46px;
+      width: 100%;
+    }
+  }
+
+  label {
+    @include breakpoint(md) {
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    input {
+      @include breakpoint(md) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .Button {
+    @include breakpoint(md) {
+      width: 100%;
+    }
+  }
+}

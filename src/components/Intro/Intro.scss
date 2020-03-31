@@ -1,0 +1,120 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Intro {
+  height: 100vh;
+  min-height: 768px;
+  position: relative;
+  overflow: hidden;
+
+  @include breakpoint(md) {
+    min-height: 640px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 36, 83, 0.9);
+    z-index: 1;
+  }
+
+  &__holder {
+    position: relative;
+    z-index: 2;
+    color: $color-white;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__subTitle {
+    display: block;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    @include breakpoint(xlg) {
+      font-size: 28px;
+    }
+
+    @include breakpoint(md) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  h1 {
+    font: bold 65px/1.5 $font-ttweb;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 30px;
+
+    @include breakpoint(xlg) {
+      font-size: 40px;
+    }
+
+    @include breakpoint(md) {
+      font-size: 32px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    margin: 0 auto 73px;
+    max-width: 930px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+
+    @include breakpoint(xlg) {
+      font-size: 18px;
+      margin-bottom: 63px;
+    }
+
+    @include breakpoint(md) {
+      font-size: 14px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__btns {
+    @include breakpoint(lg) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .Button {
+      margin-left: 22px;
+      margin-right: 22px;
+
+      @include breakpoint(lg) {
+        min-width: 296px;
+        margin-bottom: 32px;
+      }
+
+      @include breakpoint(md) {
+        margin-bottom: 20px;
+      }
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Approach {
+  padding: 200px 0;
+
+  @include breakpoint(lg) {
+    padding: 120px 20px;
+  }
+
+  @include breakpoint(md) {
+    padding: 58px 0 92px;
+  }
+
+  .app-container {
+    display: flex;
+  }
+
+  &__img {
+    flex-basis: 35%;
+    min-width: 35%;
+
+    @include breakpoint(lg) {
+      flex-basis: 47%;
+      min-width: 47%;
+    }
+
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+      max-width: 220px;
+      padding: 9px 0 38px;
+
+      @include breakpoint(md) {
+        display: block;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    flex: auto;
+    padding: 0 220px 0 100px;
+
+    @include breakpoint(xlg) {
+      padding-right: 100px;
+    }
+
+    @include breakpoint(lg) {
+      padding-right: 0;
+      padding-left: 36px;
+    }
+
+    @include breakpoint(md) {
+      padding: 0 20px 0 0;
+    }
+
+    .Title__h2 {
+      margin-top: -3px;
+      margin-bottom: 38px;
+
+      @include breakpoint(lg) {
+        margin-bottom: 18px;
+        margin-top: -4px;
+      }
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.5;
+      margin: 0 0 50px;
+
+      @include breakpoint(lg) {
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+
+    @include breakpoint(lg) {
+      display: block;
+    }
+  }
+
+  &__list,
+  &__person {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  &__person {
+    color: #a4a4a4;
+    font-size: 16px;
+
+    @include breakpoint(lg) {
+      margin-bottom: 16px;
+    }
+
+    @include breakpoint(md) {
+      margin-bottom: 32px;
+    }
+
+    strong {
+      color: $color-black-dark;
+      font-size: 22px;
+      display: block;
+      margin-bottom: 10px;
+
+      @include breakpoint(lg) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    font-size: 22px;
+    line-height: 1;
+
+    @include breakpoint(md) {
+      font-size: 16px;
+    }
+
+    li {
+      padding: 0 0 20px 40px;
+      position: relative;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      a {
+        color: $color-black-dark;
+
+        &[href^="mailto"] {
+          word-break: break-all;
+        }
+      }
+
+      .IconCustom {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        color: $color-green-light;
+      }
+    }
+  }
+}

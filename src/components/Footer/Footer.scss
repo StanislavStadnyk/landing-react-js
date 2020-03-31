@@ -1,0 +1,111 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Footer {
+  padding: 56px 0 107px;
+  background: $color-blue-dark;
+
+  @include breakpoint(lg) {
+    padding: 28px 0 70px;
+  }
+
+  a {
+    color: $color-white;
+  }
+
+  .app-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+
+  .Logo {
+    margin-top: 3px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(lg) {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+
+    @include breakpoint(md) {
+      align-items: flex-start;
+      padding-top: 28px;
+    }
+  }
+
+  &__nav {
+    @include list-reset;
+    font-size: 16px;
+    font-weight: 500;
+
+    @include breakpoint(lg) {
+      padding-top: 44px;
+    }
+
+    @include breakpoint(md) {
+      padding-top: 17px;
+    }
+
+    li {
+      display: inline-block;
+      text-transform: capitalize;
+      margin-right: 60px;
+
+      @include breakpoint(lg) {
+        margin-right: 35px;
+      }
+
+      @include breakpoint(md) {
+        display: block;
+        line-height: 28px;
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        @include breakpoint(lg) {
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      .app-btn-reset {
+        text-transform: capitalize;
+        font-weight: normal;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 40px;
+    align-items: center;
+
+    @include breakpoint(lg) {
+      justify-content: flex-end !important;
+      padding-top: 26px;
+      font-size: 16px;
+    }
+
+    @include breakpoint(md) {
+      padding-top: 21px;
+    }
+  }
+
+  &__facebook {
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+
+    img {
+      margin-left: 16px;
+    }
+  }
+}

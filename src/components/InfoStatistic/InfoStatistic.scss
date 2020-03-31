@@ -1,0 +1,98 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.InfoStatistic {
+  padding: 170px 0;
+
+  @include breakpoint(xlg) {
+    padding: 80px 0 95px;
+  }
+
+  @include breakpoint(lg) {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+
+  @include breakpoint(md) {
+    padding: 50px 0 80px;
+  }
+
+  .app-container {
+    display: flex;
+
+    @include breakpoint(xlg) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  &__num {
+    display: flex;
+
+    div {
+      flex-grow: 1;
+      flex-basis: 0;
+
+      &:first-child {
+        @include breakpoint(md) {
+          margin-right: 28px;
+        }
+      }
+
+      strong {
+        display: block;
+        font-weight: 600;
+        font-size: 78px;
+
+        @include breakpoint(md) {
+          font-size: 56px;
+        }
+      }
+    }
+  }
+
+  &__holder {
+    @include breakpoint(xlg) {
+      padding-top: 56px;
+    }
+
+    @include breakpoint(md) {
+      padding-top: 42px;
+    }
+
+    h2 {
+      font-size: 50px;
+      line-height: 64px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0 0 20px;
+
+      @include breakpoint(xlg) {
+        text-align: center;
+      }
+
+      @include breakpoint(lg) {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 10px;
+      }
+
+      @include breakpoint(md) {
+        font-size: 28px;
+      }
+    }
+
+    .Button {
+      margin-left: -20px;
+
+      @include breakpoint(xlg) {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

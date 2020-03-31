@@ -1,0 +1,131 @@
+{
+  "intro_title": "Unlimited items – one click away!",
+  "intro_subTitle": "Welcome to portfolio!",
+  "intro_text": "portfolio is a sophisticated database with working items, owners, working rights and financial statements. We offer you a state-of-the art AIS tracking system with unlimited amount of items and my fleets.",
+
+  "btn_contactUs": "contact us",
+  "btn_tryTrial": "try trial now",
+  "btn_watchVideo": "watch the video",
+  "btn_getStarted": "Get started",
+  "btn_terms": "terms",
+  "btn_privacy": "privacy",
+  "btn_followUs": "follow us",
+
+  "features_uniqueAIS": "unique <br> AIS",
+  "features_database": "database always <br> up to date",
+  "features_weather": "weather <br> forecast",
+
+  "infoSection": [
+    {
+      "title": "Unlimited <br> items",
+      "text": "We offer you a state-of-the art AIS tracking system with unlimited amount of items and my fleets.",
+      "img": "img-1.jpg"
+    },
+    {
+      "title": "no <br> restrictions",
+      "text": "Log in to any device, i.e. smartphone, tablet, computer etc.",
+      "img": "img-2.jpg"
+    },
+    {
+      "title": "weather <br> forecast",
+      "text": "Check weather forecast in the different working grounds.",
+      "img": "img-3.jpg"
+    },
+    {
+      "title": "measure <br> distances",
+      "text": "Measure the distance from one item to another.",
+      "img": "img-4.jpg"
+    },
+    {
+      "title": "connect <br> with our users",
+      "text": "If you are a service provider, we provide you with a delicate opportunity: connect with our users! <br><br> It works like Facebook. Create your own page. Publish articles, products and upload videos. It is possible to search for your phone number, company and contact information. The page is integrated to our AIS.",
+      "img": "img-5.jpg"
+    }
+  ],
+
+  "referenceSection_title": "reference list",
+  "referenceSection_list": [
+    {
+      "text": "W. van Der Zwaan",
+      "img": "Emoji-1.svg"
+    },
+    {
+      "text": "K. Halstensen AS",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Halstensen Granit AS",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Cornelis Vrolijk/Jaczon",
+      "img": "Emoji-1.svg"
+    },
+    {
+      "text": "Nesbakk",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Murmansk Trawl Fleet",
+      "img": "Emoji-3.svg"
+    },
+    {
+      "text": "Gerda Marie AS",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Brim",
+      "img": "Emoji-4.svg"
+    },
+    {
+      "text": "Havsbrún",
+      "img": "Emoji-5.svg"
+    },
+    {
+      "text": "Varðin",
+      "img": "Emoji-5.svg"
+    },
+    {
+      "text": "Scandic Pelagic",
+      "img": "Emoji-6.svg"
+    },
+    {
+      "text": "Norebo",
+      "img": "Emoji-3.svg"
+    },
+    {
+      "text": "Varðin Pelagic",
+      "img": "Emoji-5.svg"
+    },
+    {
+      "text": "Royal Greenland",
+      "img": "Emoji-8.svg"
+    },
+    {
+      "text": "DEFA Group",
+      "img": "Emoji-3.svg"
+    },
+    {
+      "text": "Hardhaus AS",
+      "img": "Emoji-2.svg"
+    }
+  ],
+
+  "infoStatistic_text_1": "working items",
+  "infoStatistic_text_2": "countries",
+  "infoStatistic_num_1": "400+",
+  "infoStatistic_num_2": "15+",
+  "infoStatistic_title": "Want to join them?",
+
+  "trialSection_title": "Start Your Free Trial Now",
+  "trialSection_text": "Sign up for a trial account and try all advantages",
+  "trialSection_placeholder": "Enter your email",
+  "trialSection_label": "I have read and agreed to the <1>Terms</1> and <1>Conditions</1>",
+  "trialSection_msgResponseResolve": "Please check your email box!",
+  "trialSection_msgResponseReject": "Email already exists!",
+  "trialSection_msgResponseError": "Connection problem. Please try again!",
+  "trialSection_msgInvalidEmail": "You entered an invalid email. Please try again!",
+
+  "approach_title": "individual <br> approach",
+  "approach_text": "We are attentive to each user, listen to all wishes and respond to requests as quickly as possible. <br> We are open to wishes for improving our service for your convenience."
+}

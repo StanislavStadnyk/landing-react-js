@@ -1,0 +1,56 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.ReactModal {
+  &__Overlay {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    z-index: 9999;
+  }
+
+  &__Content {
+    width: 920px;
+    left: 50% !important;
+    top: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    overflow: visible !important;
+    border-radius: 0 !important;
+    transform: translate(-50%, -50%);
+
+    @include breakpoint(lg) {
+      width: 670px;
+    }
+
+    @include breakpoint(md) {
+      width: 280px;
+      padding: 10px !important;
+    }
+  }
+
+  &__btnClose {
+    @include transition;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: $color-green-light;
+    color: $color-white;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    border-radius: 30px;
+    font: 27px/1 Arial, Helvetica, sans-serif;
+    outline: none;
+    cursor: pointer;
+
+    @include breakpoint(md) {
+      top: -20px;
+      right: -15px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

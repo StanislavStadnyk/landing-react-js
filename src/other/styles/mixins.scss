@@ -1,0 +1,78 @@
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// breakpoints mixin
+// @param {String} $point - name of breakpoint
+// add '-up' if you want (min-width: $point) and leave with no suffix for (max-width: $point - 1px)
+@mixin breakpoint($point) {
+  $query-direction: '';
+  $query-point: '';
+  $query-size: '';
+
+  @if str-index($point, '-up') {
+    $query-direction: 'min-width';
+    $query-point: str-slice($point, 0, str-length($point) - str-length('-up'));
+    $query-size: map-get($breakpoints, $query-point);
+  } @else {
+    @if str-index($point, '-down') {
+      $query-point: str-slice(
+        $point,
+        0,
+        str-length($point) - str-length('-down')
+      );
+    } @else {
+      $query-point: $point;
+    }
+
+    $query-direction: 'max-width';
+    $query-size: map-get($breakpoints, $query-point) - 1px;
+  }
+
+  @media screen and (#{$query-direction}: #{$query-size}) {
+    @content;
+  }
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin transition {
+  transition: 0.2s;
+}
+
+@mixin icomoon($iconCode) {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    content: $iconCode;
+  }
+}

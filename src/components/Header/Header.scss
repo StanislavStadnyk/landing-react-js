@@ -1,0 +1,36 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Header {
+  @include transition;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 32px 0;
+
+  @include breakpoint(xlg) {
+    padding: 23px 0;
+  }
+
+  .app-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sticky {
+    background: $color-blue-dark-2;
+  }
+
+  &__btns {
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    .Button {
+      margin-left: 24px;
+    }
+  }
+}

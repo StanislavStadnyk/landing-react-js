@@ -1,0 +1,73 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.TrialSection {
+  background: $color-green-light;
+  padding: 145px 0 155px;
+  color: $color-white;
+
+  @include breakpoint(lg) {
+    padding: 90px 0 100px;
+  }
+
+  @include breakpoint(md) {
+    background: $color-green-light;
+    padding: 64px 0 74px;
+  }
+
+  .app-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__holder {
+    max-width: 70%;
+    flex-basis: 70%;
+
+    @include breakpoint(xlg) {
+      max-width: 85%;
+      flex-basis: 85%;
+    }
+
+    @include breakpoint(lg) {
+      max-width: 100%;
+      flex-basis: 100%;
+      padding: 0 48px;
+    }
+
+    @include breakpoint(md) {
+      padding: 0;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1.25;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+      font-size: 40px;
+    }
+
+    @include breakpoint(md) {
+      font-size: 33px;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+
+    @include breakpoint(lg) {
+      font-size: 18px;
+    }
+
+    @include breakpoint(md) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+}

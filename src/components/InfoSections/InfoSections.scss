@@ -1,0 +1,14 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.InfoSections {
+  padding: 224px 0 0;
+
+  @include breakpoint(xlg) {
+    padding: 56px 0;
+  }
+
+  @include breakpoint(md) {
+    padding: 40px 0 0;
+  }
+}

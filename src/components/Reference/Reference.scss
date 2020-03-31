@@ -1,0 +1,68 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Reference {
+  background: $color-grey-light-2;
+  padding: 138px 0 175px;
+
+  @include breakpoint(lg) {
+    padding: 86px 40px 96px 104px;
+  }
+
+  @include breakpoint(md) {
+    padding: 53px 0 47px;
+  }
+
+  &__col {
+    text-align: center;
+  }
+
+  .Title__h2 {
+    margin-bottom: 52px;
+
+    @include breakpoint(lg) {
+      margin-bottom: 36px;
+    }
+
+    @include breakpoint(md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    font-size: 18px;
+    line-height: 1;
+    column-count: 3;
+    column-gap: 40px;
+
+    @include breakpoint(lg) {
+      column-count: 2;
+      column-gap: 20px;
+      font-size: 16px;
+    }
+
+    @include breakpoint(md) {
+      column-count: 1;
+      font-size: 14px;
+    }
+
+    li {
+      margin-bottom: 12px;
+
+      @include breakpoint(md) {
+        margin-bottom: 6px;
+      }
+    }
+
+    img {
+      vertical-align: -7px;
+      margin-right: 17px;
+
+      @include breakpoint(md) {
+        vertical-align: -8px;
+        margin-right: 23px;
+      }
+    }
+  }
+}

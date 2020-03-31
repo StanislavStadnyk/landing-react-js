@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-text;
+  font-size: 20px;
+  background: $color-white;
+
+  @include breakpoint(xlg) {
+    font-size: 18px;
+  }
+
+  @include breakpoint(md) {
+    font-size: 16px;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  @include transition;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+}
+
+label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  padding-left: 26px;
+
+  input {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+
+  a {
+    color: $color-primary;
+  }
+}
+
+.app-container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: $container-max-width;
+}
+
+.app-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.app-text-inherit {
+  text-transform: inherit !important;
+}
+
+.app-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.app-d-none {
+  display: none !important;
+}
+
+.app-d-md-inline-block {
+  @include breakpoint(lg) {
+    display: inline-block !important;
+  }
+}
+
+.app-d-md-block {
+  @include breakpoint(lg) {
+    display: block !important;
+  }
+}
+
+.app-d-md-none {
+  @include breakpoint(lg) {
+    display: none !important;
+  }
+}
+
+.app-d-sm-block {
+  @include breakpoint(md) {
+    display: block !important;
+  }
+}
+
+.app-d-sm-none {
+  @include breakpoint(md) {
+    display: none !important;
+  }
+}
+
+.app-btn-reset {
+  padding: 0 !important;
+  min-width: 0 !important;
+  line-height: 1 !important;
+  border: 0 !important;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.Logo {
+  img {
+    vertical-align: top;
+
+    @include breakpoint(md) {
+      width: 156px;
+    }
+  }
+}
+
+.Title {
+  &__h2 {
+    color: $color-white;
+    line-height: 40px;
+    font: bold 56px/1.65 $font-ttweb;
+    text-transform: uppercase;
+    margin: 0 0 23px 10px;
+
+    @include breakpoint(xlg) {
+      font-size: 40px;
+    }
+
+    @include breakpoint(md) {
+      font-size: 36px;
+    }
+
+    strong {
+      color: $color-white;
+      background-color: $color-primary;
+      box-shadow: 10px 0 0 $color-primary, -10px 0 0 $color-primary;
+    }
+  }
+}
+
+.FormControl {
+  @include placeholder {
+    color: $color-white;
+  }
+
+  outline: none;
+  border: 2px solid $color-white;
+  border-radius: 4px;
+  background: none;
+  padding: 0 20px;
+  height: 56px;
+  color: $color-white;
+
+  &__error {
+    border-color: $color-error;
+    color: $color-error;
+  }
+
+  &__valid {
+    border-color: $color-valid;
+    color: $color-valid;
+  }
+}
+
+.VideoResponsiveFrame {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.VideoBG {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
