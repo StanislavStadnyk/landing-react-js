@@ -39,7 +39,7 @@ const InfoSection: FC<InfoSectionProps> = ({
       </div>
 
       <figure className="InfoSection__img">
-        <img src={`/assets/${img}`} alt={i18n.t(text)} />
+        <img src={`assets/${img}`} alt={i18n.t(text)} />
       </figure>
     </section>
   );

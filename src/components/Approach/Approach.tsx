@@ -9,7 +9,7 @@ const Approach = () => {
     <section className="Approach" id="approach-section">
       <div className="app-container">
         <figure className="Approach__img">
-          <img src="/assets/img-contact.jpg" alt="Stanislav Stadnyk" />
+          <img src="assets/img-contact.jpg" alt="Stanislav Stadnyk" />
         </figure>
         <div className="Approach__text">
           <h2 className="Title__h2">
@@ -28,7 +28,7 @@ const Approach = () => {
             </Trans>
           </p>
           <figure className="Approach__img--mobile">
-            <img src="/assets/img-contact.jpg" alt="Stanislav Stadnyk" />
+            <img src="assets/img-contact.jpg" alt="Stanislav Stadnyk" />
           </figure>
           <div className="Approach__contacts">
             <div className="Approach__person">

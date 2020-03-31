@@ -14,7 +14,7 @@ const Reference = () => {
     const { text, img } = item;
     return (
       <li key={text}>
-        <img src={`/assets/flags/${img}`} alt={text} width="33" />
+        <img src={`assets/flags/${img}`} alt={text} width="33" />
         {text}
       </li>
     );

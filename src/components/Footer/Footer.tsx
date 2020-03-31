@@ -61,11 +61,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Trans i18nKey="btn_followUs">Follow Us</Trans>
-                <img
-                  src="/assets/icon-facebook.svg"
-                  width="28"
-                  alt="Facebook"
-                />
+                <img src="assets/icon-facebook.svg" width="28" alt="Facebook" />
               </a>
             </li>
           </ul>
@@ -88,7 +84,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <Trans i18nKey="btn_followUs">Follow Us</Trans>
-          <img src="/assets/icon-facebook.svg" width="28" alt="Facebook" />
+          <img src="assets/icon-facebook.svg" width="28" alt="Facebook" />
         </a>
       </div>
     </footer>
