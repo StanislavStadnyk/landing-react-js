@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/landing-react-js/static/css/main.77533a2a.chunk.css",
-    "main.js": "/landing-react-js/static/js/main.a3aca63f.chunk.js",
-    "main.js.map": "/landing-react-js/static/js/main.a3aca63f.chunk.js.map",
+    "main.js": "/landing-react-js/static/js/main.9ac39dd8.chunk.js",
+    "main.js.map": "/landing-react-js/static/js/main.9ac39dd8.chunk.js.map",
     "runtime-main.js": "/landing-react-js/static/js/runtime-main.453c73cb.js",
     "runtime-main.js.map": "/landing-react-js/static/js/runtime-main.453c73cb.js.map",
     "static/css/2.8ff17cee.chunk.css": "/landing-react-js/static/css/2.8ff17cee.chunk.css",
     "static/js/2.8aafc1d0.chunk.js": "/landing-react-js/static/js/2.8aafc1d0.chunk.js",
     "static/js/2.8aafc1d0.chunk.js.map": "/landing-react-js/static/js/2.8aafc1d0.chunk.js.map",
     "index.html": "/landing-react-js/index.html",
-    "precache-manifest.7d7de0477830be74b60acb12dd07bf39.js": "/landing-react-js/precache-manifest.7d7de0477830be74b60acb12dd07bf39.js",
+    "precache-manifest.14d1a1040d10834109e97804ba297f2c.js": "/landing-react-js/precache-manifest.14d1a1040d10834109e97804ba297f2c.js",
     "service-worker.js": "/landing-react-js/service-worker.js",
     "static/css/2.8ff17cee.chunk.css.map": "/landing-react-js/static/css/2.8ff17cee.chunk.css.map",
     "static/css/main.77533a2a.chunk.css.map": "/landing-react-js/static/css/main.77533a2a.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.8ff17cee.chunk.css",
     "static/js/2.8aafc1d0.chunk.js",
     "static/css/main.77533a2a.chunk.css",
-    "static/js/main.a3aca63f.chunk.js"
+    "static/js/main.9ac39dd8.chunk.js"
   ]
 }
