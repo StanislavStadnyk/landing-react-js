@@ -24,7 +24,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={logoSrc} alt={LOGO} width="260" />
+          <img src={logoSrc} alt={LOGO} width="180" />
         </a>
 
         <div className="Footer__row">
